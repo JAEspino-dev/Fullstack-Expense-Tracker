@@ -62,9 +62,9 @@
                                 </span>
                         </li>
                         <button class="deleteButton"
-                            data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">Deny</button>
+                            data-msg-id="<%= unapprovedList[i]._id %>">Deny</button>
                         <button class="updateApproval"
-                            data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">Approve</button>
+                            data-msg-id="<%= unapprovedList[i]._id %>">Approve</button>
                         <% } %>
                 </ul>
             </section>
@@ -75,23 +75,23 @@
                 <ul>
                     <% for(let i=0; i < approvedList.length; i++) {%>
                         <li>
-                            <span data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">
+                            <span data-msg-id="<%= approvedList[i]._id %>">
                                 <%= approvedList[i].date %>
                             </span>
-                            <span data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">$ <%=
+                            <span data-msg-id="<%= approvedList[i]._id %>">$ <%=
                                     approvedList[i].amountSpent %></span>
-                            <span data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">
+                            <span data-msg-id="<%= approvedList[i]._id %>">
                                 <%= approvedList[i].expenseDescription %>
                             </span>
-                            <span data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">
+                            <span data-msg-id="<%= approvedList[i]._id %>">
                                 <%= approvedList[i].approvedBy %>
                             </span>
                         </li>
                         <button class="deleteButton"
-                            data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">Delete
+                            data-msg-id="<%= approvedList[i]._id %>">Delete
                             entry</button>
                         <button class="paidOut"
-                            data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">Check
+                            data-msg-id="<%= approvedList[i]._id %>">Check
                             written</button>
                         <% } %>
                 </ul>
@@ -116,7 +116,7 @@
                             <%= checkList[i].expenseDescription %></span>
                         </li>
                         <button class="deleteButton"
-                            data-msg-id="<%= ArrayOfDocumentsFromMongoDBCollectionExpenseList[i]._id %>">Clear</button>
+                            data-msg-id="<%= checkList[i]._id %>">Clear</button>
                         <% } %>
                 </ul>
             </section>
