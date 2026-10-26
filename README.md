@@ -9,7 +9,7 @@ Click on link.
 If employee, enter reimbursement request. If manager, either approve or deny request, then record if check written!   
 
 # 📷 Images
-![Impulse Vs Actual App](public/screenshot.png)
+![Impulse Vs Actual App](public/img/screenshot.png)
 
 # ✨ Features
 Fully responsive design for desktop and mobile.         
