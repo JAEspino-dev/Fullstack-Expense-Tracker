@@ -1,13 +1,20 @@
 body {
-  background: rgb(10, 168, 131);
-  padding: 10%;
+  background-image: url("img/images\ \(7\).jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   word-wrap: break-word;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
+.col-sm-6{
+  background:green;
+  border-radius:10px;
+  padding:1%;
+}
 img {
   height: 300px;
   border-radius:10px;
