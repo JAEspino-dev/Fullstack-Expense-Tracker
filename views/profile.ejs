@@ -75,6 +75,9 @@
                 <ul>
                     <% for(let i=0; i < approvedList.length; i++) {%>
                         <li>
+                            <p>
+                                User that entered transaction: <%= approvedList[i].user %>
+                            </p>
                             <span data-msg-id="<%= approvedList[i]._id %>">
                                 <%= approvedList[i].date %>
                             </span>
@@ -99,13 +102,13 @@
 
             <section id="checkWritten">
                 <h2>Payment Issued</h2>
-                <p>These reimbursements have been paid and are ready for final record cleanup.</p>
+                <p>These reimbursements have been paid out, go ahead and clear them.</p>
                 <ul class="">
                     <!-- Loop through quotes objects from MongoDB -->
                     <% for(let i=0; i < checkList.length; i++) {%>
                         <li class="items">
                             <span>
-                                Manager: <%= checkList[i].user %>
+                                Manager Approved!
                             </span>
                             <span>
                                 <%= checkList[i].date %>
